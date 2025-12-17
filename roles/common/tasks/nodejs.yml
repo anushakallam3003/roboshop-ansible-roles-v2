@@ -4,7 +4,7 @@
     state: present
 
 - name: Load app pre-reqs
-  ansible.builtin.import_tasks: app prereqs.yml
+  ansible.builtin.import_tasks: app_prereqs.yml
 
 - name: Install packages based on package.json.
   community.general.npm:

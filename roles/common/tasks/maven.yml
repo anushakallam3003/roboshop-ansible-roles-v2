@@ -4,7 +4,7 @@
     state: present
 
 - name: Load app pre-reqs
-  ansible.builtin.import_tasks: app prereqs.yml
+  ansible.builtin.import_tasks: app_prereqs.yml
 
 - name: Install maven dependencies
   ansible.builtin.shell: mvn clean package ; mv target/{{ component }}-1.0.jar {{ component }}.jar
